@@ -1,0 +1,74 @@
+<!--ESTA TAG É UMA TAG DE COOMENTÁRIO -->
+<!--Comando para indicar que a página é desenvolvida na linguagem HTML -->
+<!DOCTYPE html>
+<!--HTML VAI COMPORTAR A ESTRUTURA DO NOSSO PROJETO-->
+<html lang = "pt-br"><!--pt-br vai indicar o idioma em que a página está sendo desenvolvido-->
+    <head><!--Contém as regras, título e conexões com js e o css-->
+        <meta charset = "UFT-8"> <!-- Adequa a maioria dos caracteres em diferentes idiomas-->
+        <title>Primeiro site</title><!-- O titítulo que aparecerá da nossa página no navegador-->
+        <link rel="stylesheet" href="exercicios.css">
+    </head>
+    <body>
+        <ul id="menu">
+            <li class="item"><a href="exercicio.html">Home</a></li><!--Item menu-->
+                <li class="item"><a href="links.html">SENAI</a></li>
+                <li class="item"><a href="inputs.html">Formularios</a></li>
+                <li class="item"><a href="listasetabelas.html">Listas e Tabelas</a></li>
+                <li class="item"><a href="linhasparagrafos.html">Linhas e Paragrafos</a></li>
+                <li class="item"><a href="conexa0.html">Conexões</a></li>
+                <li class="item"><a href="sobremim.html">Sobremim</a></li>
+                <li class="item"><a href="java.html">Java</a></li>
+        </ul>
+        <center>
+        <!--TAGS DE TÍTULO-->
+        <h1>Primeiro Site Curso de Desenvolvimento Web</h1><!-- O número indica o tamanho do título sendo 1 maior .... 6 o menor-->
+        <br>
+        <!-- Inserir imagem no site -->
+        <img src="src\imagens\Planeta.jpg" alt="Mundo" width="300" height="200">
+        <figcaption>Fonte: https://www.filantropia.ong/informacao/vamos-mudar-o-mundo</figcaption&gt;
+        <!--Para textos maiores, parágrafos utilizamos a tag p -->
+        <!--<b> coloca o texto em negrito, <i> coloca o texto em itálico e <u> faz o sublinhado no texto-->
+        <div>
+            <p>
+                O primeiro código que todo desenvolvedor imprime na tela é o famoso <b>hello <br>world</b>, isso geralmente é feito em cursos de desenvolvimento <i>back end</i> como <br> <b>Programação Python, Java, Kotlin...</b>Mas nós, turma de Desenvolvimento Web<br> não poderiamos ficar de fora, afinal <b>também somos Programadores!</b> Então:
+            </p>
+            <p>
+                <b>Olá Mundo!!</b>
+            </p>
+        </div>
+        <img src="src\imagens\programador.png" alt="programador" width="200" height="150" style="border-radius: 20px;">
+       
+        <p>Olá, este é o meu primeiro código em html, estou cursando um<br> <b>treinamento de desenvolvimento web</b>, e o meu maior objetivo é <br><u>sair do curso</u> com o site do meu negócio <i>lindo e funcional</i>!
+            🤩🤩🤩
+        </p>
+        <img src="src\imagens\programador2.jpg" alt="Mundo" width="150" height="150" style="border-radius: 50px;"><!--O border adiciona uma borda a imagem selecionada-->
+        <!--_parent liga páginas do nosso site-->
+        <br>
+        <br>
+        <br>
+        <a href="links.html" target="_parent"><img src="src/imagens/proxima.png" width="150" height="50"></a>
+        </center>
+        <center>
+        <a href="links.html" target="_self">
+            Veja mais sobre conceito de Links
+        </a>
+        <br>
+        <a href="inputs.html" target="_self">
+            Veja mais sobre Conceito de Entrada de Dados (Input)
+        </a>
+        <br>
+        <a href="listasTabelas.html" target="_self">
+            Veja mais sobre Conceito de Listas e Tabelas
+        </a>
+        <br>
+        <a href="linhasparagrafos.html" target="_self">
+            Veja mais sobre Conceito de Listas e Tabelas
+        </a>
+    </center>
+
+    </body>
+ 
+</html>
+<!--Quando a tabela é pequena demais para exibir o cunteudo: Para resolver problemas precisamos adicionar uma barra de rolagem
+1.Colocar a tabela em uma <div></div>
+<div Style="overflow-x:auto"-->

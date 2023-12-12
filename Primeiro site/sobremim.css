@@ -1,0 +1,52 @@
+body{
+    /*background-image: url(); imagem de fundo no site*/
+    background: linear-gradient(#dbdbdb,#dbdbdb);
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    padding-bottom: 7%;
+}
+
+#menu{
+    list-style-type: none;/*Remover marcador da lista*/
+    background: linear-gradient(rgb(18, 18, 19),#0c0c0c);
+    width: 150px;
+    height: 100%;
+    padding-left: 1px;
+    position: fixed;
+    overflow: auto;/*ativa barra de rolarem se tiver muito conteúdo*/
+}
+
+li a{
+    display: block;
+    width: 150px;
+    height: 60px;
+    background-color: linear-gradient(#0984fe,#cbd7fa);
+    color: white;
+}
+
+
+.item{
+    /*alinhamento do item horizontalmente*/
+    text-align: center;
+    font-size: 14px;/*tamanho da letra*/
+    font-family: serif;/*tipo de letra*/
+}
+p,h1,h2,h3,h4,img,video,iframe,h5,ol,ul{
+    padding-left: 12%;
+}
+
+
+li a:hover{/*altera a cor do link ao passar o mouse*/
+    background: linear-gradient(#f8f8f9,#fdfdfd);
+    color:black;
+}
+
+.item a{
+    padding-top: 30px;
+    text-decoration: none;
+}
+#nome{
+    font-family: 'Bauhaus 93';
+    font-size: 50px;
+}

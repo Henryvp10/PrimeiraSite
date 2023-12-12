@@ -1,0 +1,15 @@
+.Titulo{
+    color:blueviolet;font-size:19;
+}
+#titulo{
+    border-collapse: collapse;
+    width:75%;
+}
+/*Colocamos uma borda das linhas e colunas*/
+td,th{
+    border:1px solid rgb(18,15,15)/*Para adicionar cor podemos usar # ou rgb , mas quando utilizamos o rgb devemos colocar() e tres numero como medida.*/
+}
+tr{
+    color: rgb(0, 255, 13);/*cor da letra*/
+    background-color: bisque; /*Cor de fundo*/
+}

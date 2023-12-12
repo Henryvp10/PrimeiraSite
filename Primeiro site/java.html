@@ -1,0 +1,278 @@
+ <!DOCTYPE html>
+<html lang="en">
+   <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comandos JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="exercicios.css">
+    <!--Conexão do JavaScript dentro do html-->
+    <script src="java.js"></script>
+   </head>
+   <body>
+    <ul id="menu">
+        <li class="item"><a href="exercicio.html">Home</a></li><!--Item menu-->
+            <li class="item"><a href="links.html">SENAI</a></li>
+            <li class="item"><a href="inputs.html">Formularios</a></li>
+            <li class="item"><a href="listasetabelas.html">Listas e Tabelas</a></li>
+            <li class="item"><a href="linhasparagrafos.html">Linhas e Paragrafos</a></li>
+            <li class="item"><a href="conexa0.html">Conexões</a></li>
+            <li class="item"><a href="sobremim.html">Sobremim</a></li>
+            <li class="item"><a href="java.html">Java</a></li>
+    </ul>
+      <h1>JavaScript no desenvolvimento WEB</h1>
+      <p>JavaScript permite criar interfaces de usuário interativas. Páginas web podem responder a ações do usuário, como cliques, movimentos do mouse, preenchimento de formulários, etc., sem a necessidade de recarregar a página.</p>
+      <h1>DOM - Document Object Model</h1>
+      <p>Criado automaticamente pelo navegador ao carregar a página,e assim podemos manipular os elementos criados no HTML. O JavaScript permite a manipulação dinâmica do DOM, que representa a estrutura hierárquica de elementos HTML na página. Isso possibilita adicionar, remover ou modificar elementos e atributos na página em tempo real.</p>
+      <h1>CONEXÃO</h1>
+      <p></p>
+
+      <h1>Variaveis</h1>
+      <p>Coloque a definição e variável assim</p>
+      <p>Exemplo de como criar uma variável em java:
+         <br>
+      var minhaVariavel = "Olá, mundo!";
+      E para realizar a impressão no console, utilizamo o comando console.log(minhaVariavel);
+      <br>
+      Todo comando deve terminar com ; ao final.<br><br><br>
+      Adicionar as regras de nomeação da variável.
+      </p>
+      <h3>Para a criacão de uma variavel não é permitido os seguites requisitos:Iniciar com letra maiuscula ou numero,ter acentos ou caracteres especiais e ter espaço entre as palavras</h3>
+      <h1>Tipos de dados </h1>
+      <p>Toda a variável armazena uma informação, essa informação tem uma tipologia ou formato.
+         <center>
+         <table border="4" width="50%"><!--O border adicioando ao a table da a tabela uma borda --><!--Coloca o tamanho como % ou px(pixel)-->
+
+         </tr>
+         <tr align="center" BGcolor="dbdbdb"><!--O align="center" serve para centralizar as colunas e tabelas que estao dentro do<tr>-->
+            <!--O Bg color serve para colocar cor na coluna -->
+               <td>Tipo</td><!--O <td> É as colunas e linhas da tabela -->
+            <td>Explicação</td>
+         </tr>
+         <tr>
+               <td>Int</td><!--O <td> É as colunas e linhas da tabela -->
+               <td>Int é o tipo de determinação direcionado a numeros inteiros</td>
+            </tr>
+            <tr>
+               <td>float</td><!--O <td> É as colunas e linhas da tabela -->
+               <td>float é o tipo de determinação direcionado a numeros decimais</td>
+            </tr>
+            <tr>
+               <td>booleano</td><!--O <td> É as colunas e linhas da tabela -->
+               <td>booleano é o tipo de determinação que tem como objetivo as seguintes , a solução deverá ser verdadeira(true) ou(or) false(falsa)</td>
+            </tr>
+            <tr>
+               <td>Char</td><!--O <td> É as colunas e linhas da tabela -->
+               <td> O char é um tipo de variavel destinada a apenas um caracter</td>
+            </tr>
+            <tr>
+               <td>String</td><!--O <td> É as colunas e linhas da tabela -->
+               <td> O String é tipo de variavel onde podemos inserir frases e palavras</td>
+            </tr>
+            
+         
+      </table>
+      <h1>Formatando Strings</h1>
+    <p>JavaScript oferece uma variedade de funções para manipulação de strings. Aqui estão algumas das funções mais comuns:</p>
+    <table>
+        <tr>
+            <td>
+                length:
+            </td>
+            <td>
+                Retorna o comprimento da string.
+                var minhaString = "Hello, World!";
+                console.log(minhaString.length); // Saída: 13
+            </td>
+        </tr>
+        <tr>
+            <td>
+                charAt(index):
+            </td>
+            <td>
+                Retorna o caractere na posição especificada.
+                var minhaString = "Hello";
+                console.log(minhaString.charAt(0)); // Saída: "H"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                concat(str1, str2, ..., strN):
+            </td>
+            <td>
+                Concatena duas ou mais strings.
+                var str1 = "Hello";
+                var str2 = " ";
+                var str3 = "World";
+                console.log(str1.concat(str2, str3)); // Saída: "Hello World"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                indexOf(substring, start):
+            </td>
+            <td>
+                Retorna o índice da primeira ocorrência da substring, começando a busca a partir do índice especificado.
+                var minhaString = "Hello, World!";
+                console.log(minhaString.indexOf("World")); // Saída: 7
+            </td>
+        </tr>
+        <tr>
+            <td>
+                lastIndexOf(substring, start):
+            </td>
+            <td>
+                Retorna o índice da última ocorrência da substring, começando a busca a partir do índice especificado.
+                var minhaString = "Hello, World!";
+                console.log(minhaString.lastIndexOf("o")); // Saída: 8
+            </td>
+        </tr>
+        <tr>
+            <td>
+                slice(start, end):
+            </td>
+            <td>
+                Extrai uma parte da string entre os índices start e end (não incluindo end).
+                var minhaString = "Hello, World!";
+                console.log(minhaString.slice(0, 5)); // Saída: "Hello"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                substring(start, end):
+            </td>
+            <td>
+                Similar a slice, extrai uma parte da string entre start e end.
+                var minhaString = "Hello, World!";
+                console.log(minhaString.substring(7, 12)); // Saída: "World"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                substr(start, length):
+            </td>
+            <td>
+                Extrai uma parte da string a partir de start com o comprimento especificado. var minhaString = "Hello, World!";
+                console.log(minhaString.substr(7, 5)); // Saída: "World"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                replace(oldStr, newStr):
+            </td>
+            <td>
+                Substitui a primeira ocorrência de oldStr por newStr
+                var minhaString = "Hello, World!";
+                console.log(minhaString.replace("Hello", "Hi")); // Saída: "Hi, World!"
+            </td>
+        </tr>
+        <tr>
+            <td>
+                toUpperCase() e toLowerCase():
+            </td>
+            <td>
+                var minhaString = "Hello, World!";
+                console.log(minhaString.toUpperCase()); // Saída: "HELLO, WORLD!"
+                console.log(minhaString.toLowerCase()); // Saída: "hello, world!"
+            </td>
+        </tr>
+    </table>
+
+    <h1>Formatando números</h1>
+    <p>Para formatar as casas decimais dos números podemos utilizar toFixed():
+        O método toFixed() converte um número em uma string, mantendo um número específico de casas decimais.
+        var numero = 123.4567;
+        var numeroFormatado = numero.toFixed(2); // Duas casas decimais
+        console.log(numeroFormatado); // Saída: "123.46"
+    </p>
+
+
+<h1>Buscando os elementos HTML no JavaScript</h1>
+    <p>
+        Para acessar os elementos HTML em JavaScript, você pode usar vários métodos, dependendo da forma como os elementos são identificados no HTML. Aqui estão alguns métodos comuns:
+    </p>
+        <table>
+            <tr>
+                <td>
+                    document.getElementById(id):
+                </td>
+                <td>
+                    Este método retorna uma referência ao elemento que possui o ID especificado. javascript
+                    var meuElemento = document.getElementById("meuId");
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    document.getElementsByClassName(className):
+                </td>
+                <td>
+                    Este método retorna uma coleção de elementos que possuem a classe CSS especificada.
+                    var meusElementos = document.getElementsByClassName("minhaClasse");
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    document.getElementsByTagName(tagName):
+                </td>
+                <td>
+                    Este método retorna uma coleção de elementos com o nome da tag HTML especificada. javascript
+                    var minhasTags = document.getElementsByTagName("p");
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    document.querySelector(selector):
+                </td>
+                <td>
+                    Este método retorna o primeiro elemento que corresponde ao seletor CSS especificado.
+                    var meuElemento = document.querySelector("#meuId");
+                </td>
+            </tr>
+        </table>
+   </center>
+      </p>
+      <h1>Operadores</h1>
+      <p>Operadores são símbolos que permitem manipular as informações, e temos três tipos: artiméticos, lógicos e relacionais
+      <center>
+      <table border="4" width="50%">
+
+         </tr>
+         <tr align="center" BGcolor="dbdbdb">
+            
+               <td>Operadores</td>
+            <td>Explicação</td>
+         </tr>
+         <tr>
+               <td>Logicos</td>
+               <td>&& ,AND, ||, or, !, NOT</td>
+            </tr>
+            <tr>
+               <td>Relacionais</td>
+               <td>>,<,>=,<=,==,!=</td>
+            </tr>
+            <tr>
+               <td>Artimeticos</td>
+               <td>+,-,*,/</td>
+            </tr>
+         
+      </table><br><br>
+   </center>
+      </p>
+         <div class="calculadora">
+            <input type="number" id="numero1" placeholder="Digite o primeiro número">
+            <input type="number" id="numero2" placeholder="Digite o segundo número">
+            <br><br>
+            <button onclick="calcular('soma')">Soma</button>
+            <button onclick="calcular('subtracao')">subtração</button>
+            <button onclick="calcular('multiplicacao')">multiplicação</button>
+            <button onclick="calcular('divisao')">Divisão</button>
+            <p id="resultado">Resultado:</p>
+         </div>
+         <h1>Acendendo a Luz</h1>
+         <br>
+         <p>Este efeito foi gerado por meio da funcionalidade do JAVASCRIPT.</p>
+         <!--img inicial com a luz apagada-->
+         <img id="luz" src="src/imagens/luzApagada.png" alt="Luz Apagada" onmouseover='ligarLuz()' onmouseout='apagarLuz()'>
+   </body>
+</html>
+
